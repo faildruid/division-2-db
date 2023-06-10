@@ -1,0 +1,71 @@
+---
+site_name: "The Division 2 - Gear and Builds"
+site_description: "FXT Agents - The Division 2 - Gear and Builds"
+repo_url: "https://github.com/b-skwad/division-2-db"
+site_url: "https://b-skwad.github.io/division-2"
+edit_uri: "blob/develop/docs/"
+repo_name: "b-skwad/division-2-db"
+
+nav:
+  - Home: "index.md"
+
+# ==================================================================================================================================
+# Setting up the basic NAT docs theme
+theme:
+  icon:
+    # Change teh above Icon to suit your project, if desired
+    logo: "fontawesome/solid/network-wired"
+    repo: "fontawesome/brands/github"
+  name: "material"
+  palette:
+    - scheme: "default"
+      primary: "blue"
+      toggle:
+        icon: "material/lightbulb-outline"
+        name: "Switch to dark mode"
+    - scheme: "slate"
+      primary: "black"
+      accent: "teal"
+      toggle:
+        icon: "material/lightbulb"
+        name: "Switch to light mode"
+  features:
+    - "navigation.instant"
+    - "toc.follow"
+    - "toc.integrate"
+    - "navigation.tracking"
+
+# ==================================================================================================================================
+# Setting up the basic plugins
+plugins:
+  - "search"
+  - "autorefs"
+  - "mkdocstrings"
+
+
+# ==================================================================================================================================
+# Setting up the required markdown extensions
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: "mermaid"
+          class: "mermaid"
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - "abbr"
+  - "attr_list"
+  - "admonition"
+  - "pymdownx.critic"
+  - "pymdownx.caret"
+  - "pymdownx.mark"
+  - "pymdownx.highlight"
+  - "pymdownx.progressbar"
+  - "pymdownx.smartsymbols"
+  - "pymdownx.snippets"
+  - "pymdownx.keys"
+  - "pymdownx.tilde"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_css:
+  - "css/extra.css"
