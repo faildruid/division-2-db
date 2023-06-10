@@ -1,10 +1,10 @@
 ---
 site_name: "The Division 2 - Gear and Builds"
-site_description: "FXT Agents - The Division 2 - Gear and Builds"
-repo_url: "https://github.com/b-skwad/division-2-db"
-site_url: "https://b-skwad.github.io/division-2"
+site_description: "DIVISION Agents - The Division 2 - Gear and Builds"
+repo_url: "https://github.com/b-skwad/faildruid-2-db"
+site_url: "https://b-skwad.github.io/faildruid-2-db"
 edit_uri: "blob/develop/docs/"
-repo_name: "b-skwad/division-2-db"
+repo_name: "b-skwad/faildruid-2-db"
 
 nav:
   - Home: "index.md"

@@ -1,0 +1,28 @@
+---
+version: "3.4"
+services:
+  db:
+    image: "postgres:14-alpine"
+    container_name: "db"
+    hostname: "db"
+    env_file:
+      - "dev.env"
+      - "creds.env"
+    ports:
+      - "5432:5432"
+    volumes:
+      - "postgres_data:/var/lib/postgresql/data"
+  wd:
+    image: "selenium/standalone-firefox:4.8.3-20230404"
+    container_name: "wd"
+    hostname: "wd"
+    env_file:
+      - "dev.env"
+      - "creds.env"
+    shm_size: "2gb"
+    ports:
+      - "4444:4444"
+      - "7900:7900"
+
+volumes:
+  postgres_data: {}

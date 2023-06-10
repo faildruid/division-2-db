@@ -1,0 +1,56 @@
+{% load static %}
+<header class="p-3 mb-3 border-bottom bg-primary">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+        <a href="{% url 'home' %}"><img src="{% static 'img/logo.svg' %}"
+          class="link-emphasis" width="50" height="50"></a>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-left mb-md-0">
+        <li><a href="{% url 'home' %}" class="nav-link px-2 link-emphasis"> Architecture Decision Records</a></li>
+        {% if request.user.is_authenticated %}
+        <li><a href="{% url 'decision_new' %}" class="nav-link px-2 link-emphasis --bs-white"><i class="fa-regular fa-pen-to-square"></i> Create a new Division 2 DB</a></li>
+        {%endif%}
+      </ul>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" action="{% url 'search_results' %}" method="get">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="q">
+      </form>
+
+      {% if not request.user.is_authenticated %}
+      <ul class="nav">
+      <li class="nav-item link-emphasis ml-3"><a class="nav-link px-2 link-emphasis"
+          href="{% url 'login' %}?next={% url 'home' %}"><i class="fa fa-sign-in"></i>
+          Log in</a></li>
+      </ul>
+      {% else %}
+      <div class="dropdown">
+        <a href="#" class="d-block link-emphasis text-decoration-none dropdown-toggle me-auto" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-regular fa-circle-user"></i> {{ request.user.first_name | truncatechars:"30" | capfirst}}
+        </a>
+        <ul class="dropdown-menu text-small">
+          {% if request.user.is_superuser %}
+          <li><a class="dropdown-item" href="{% url 'admin:index' %}"><i class="fa-solid fa-gears"></i> Admin</a>
+          </li>
+          <div class="dropdown-divider"></div>
+          {%endif%}
+          <li><a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log out</a></li>
+        </ul>
+      </div>
+      {%endif%}
+      <div class="dropdown">
+        <a href="#" class="d-block link-emphasis text-decoration-none dropdown-toggle me-auto" data-bs-toggle="dropdown" aria-expanded="false">
+          &nbsp;&nbsp;Help
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><a class="dropdown-item"
+            href="https://docs.psmware.io/architecture-decision-records-app/user/app_getting_started/"><i
+              class="fa-solid fa-circle-info"></i> Using the App</a></li>
+        <li><a class="dropdown-item" target="_blank"
+            href="https://docs.psmware.io/architecture-decision-records-app/user/markdown/"><i
+              class="fa-brands fa-markdown"></i> Supported Markdown Syntax</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

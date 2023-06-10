@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "division"
+version = "0.1.0"
+description = ""
+authors = ["Shorel Aran <builds@psmware.ie>", "The Fail Druid <faildruid@mcleans.ie>"]
+readme = "README.md"
+packages = [{include = "division"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+djangorestframework = "^3.14.0"
+psycopg2-binary = "^2.9.6"
+pyuwsgi = "^2.0.21"
+django-cors-headers = "^4.0.0"
+django-crispy-forms = "^2.0"
+crispy-bootstrap5 = "^0.7"
+django-webserver = "^1.2.0"
+jinja2 = "^3.1.2"
+django-allauth = "^0.54.0"
+drf-spectacular = "^0.26.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+invoke = "^2.1.2"
+coverage = "^7.2.5"
+flake8 = "^6.0.0"
+pydocstyle = "^6.3.0"
+pytest = "^7.3.1"
+yamllint = "^1.32.0"
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.14"
+mkdocstrings = "^0.21.2"
+mkdocstrings-python = "^1.0.0"
+mkdocs-material-extensions = "^1.1.1"
+pytest-django = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+division-server = "division.core.cli:main"
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | static
+  )/
+  | division_config.py     # This is where you define files that should not be stylized by black
+  | tasks.py          # the root of the project
+)
+'''

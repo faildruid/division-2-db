@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "The Division 2 Item Database"
+		}
+	],
+	"settings": {
+		"terminal.integrated.profiles.linux": {
+			"zsh (login)": {
+				"path": "zsh",
+				"args": [
+					"-l"
+				]
+			}
+		},
+		"files.associations": {
+			"**/*.html": "html",
+		},
+		// Python Linting settings
+		"python.linting.enabled": true,
+		"python.linting.lintOnSave": true,
+		"python.formatting.provider": "black",
+		// Python Execution settings
+		"python.languageServer": "Pylance",
+		"python.analysis.autoSearchPaths": true,
+		"python.defaultInterpreterPath": ".venv/bin/python",
+		"cSpell.words": [
+			"afile",
+			"dcramer",
+			"globalz",
+			"localz",
+			"WSGI"
+		],
+		"cSpell.language": "en-GB",
+		"cSpell.enabledLanguageIds": [
+			"python",
+			"javascript",
+			"json",
+			"markdown",
+			"plaintext",
+			"yml"
+		],
+		"cSpell.ignorePaths": [
+			"CODEOWNERS",
+			"pyproject.toml",
+			"*.env",
+			"**.code-workspace",
+			"tasks.py"
+		],
+	}
+}

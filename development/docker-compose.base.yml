@@ -1,0 +1,23 @@
+---
+x-build: &build
+  build:
+    args:
+      PYTHON_VER: "${PYTHON_VER}"
+    context: "../"
+    dockerfile: "development/Dockerfile"
+x-base: &base
+  image: "division:py${PYTHON_VER}"
+  env_file:
+    - "dev.env"
+    - "creds.env"
+  tty: true
+
+version: "3.4"
+services:
+  api:
+    container_name: "api"
+    hostname: "api"
+    depends_on:
+      - "db"
+      - "wd"
+    <<: [*build, *base]
