@@ -46,7 +46,8 @@
 			"pyproject.toml",
 			"*.env",
 			"**.code-workspace",
-			"tasks.py"
+			"tasks.py",
+			"settings.py"
 		],
 	}
 }

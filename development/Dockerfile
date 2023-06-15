@@ -16,8 +16,9 @@ RUN apk --no-cache upgrade && \
         musl-dev \
         openldap-dev \
         freetype-dev \
+        graphviz-dev \
         curl  && \
-    apk add --no-cache openldap-clients zsh git freetype
+    apk add --no-cache openldap-clients zsh git freetype graphviz
 
 # I like a nice shell in my contaners
 RUN mkdir -p /root/.antigen

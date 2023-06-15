@@ -1,10 +1,27 @@
 """Database models for the project."""
-
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
+)
+
+
+from .gear import (
+    GearAttribute,
+    GearAttributeType,
+    GearModification,
+    GearModificationType,
+    GearTalent,
+    GearTalentType,
+    LoadOutSlot,
+)
+
+from .skills import (
+    Skill,
+    SkillSlot,
+    SkillSlotModificationType,
+    # SkillSlotModification
 )
 
 
@@ -41,3 +58,19 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = "email"
+
+__all__ = (
+    "GearAttribute",
+    "GearAttributeType",
+    "GearModification",
+    "GearModificationType",
+    "GearTalent",
+    "GearTalentType",
+    "LoadOutSlot",
+    "Skill",
+    "SkillSlot",
+    "SkillSlotModificationType",
+    # "SkillSlotModification",
+)
+
+

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # local
     # ...
     "division.core",
+    "division.extras",
 ]
 
 MIDDLEWARE = [
