@@ -6,7 +6,10 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
 )
 
+from division.core import views
+
 urlpatterns = [
+    path("", views.HomePageView.as_view(), name="home"),
     path("admin/", admin.site.urls),
     path('api/schema/', SpectacularAPIView.as_view(), name='api-schema'),
     path(

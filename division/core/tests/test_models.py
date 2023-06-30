@@ -155,43 +155,40 @@ class ModelTests(TestCase):
         skill = skills.Skill.objects.create(
             user=user,
             skill_name="skill name",
+            skill_description="skill description",
         )
 
         self.assertEquals(str(skill), skill.skill_name)
 
-    def test_create_skill_slot(self):
+    def test_create_slot(self):
         """Test creating a load-out slot."""
         user = get_user_model().objects.create_user(
             "test@example.com",
             "test123",
         )
-        skill = skills.Skill.objects.create(
-            user=user,
-            skill_name="skill name",
-        )
 
-        skill_slot = skills.SkillSlot.objects.create(user=user, skill=skill, skill_slot_name="skill_slot_name")
+        slot = skills.Slot.objects.create(user=user, slot_name="slot_name")
 
-        self.assertEquals(str(skill_slot), skill_slot.skill_slot_name)
+        self.assertEquals(str(slot), slot.slot_name)
 
-    def test_create_skill_slot_modification_type(self):
+    def test_create_slot_modification_type(self):
         """Test creating a skill slot modification type."""
         user = get_user_model().objects.create_user(
             "test@example.com",
             "test123",
         )
-        skill_slot_modification_type = skills.SkillSlotModificationType.objects.create(
+        slot_modification_type = skills.SlotModificationType.objects.create(
             user=user,
-            skill_slot_modification_type_name="skill slot attr type",
+            slot_modification_type_name="skill slot attr type",
             max_value=750,  # Representing 7.5% as an integer, will divide by 100 for any display,
             percent_value=True,
         )
 
         self.assertEquals(
-            str(skill_slot_modification_type), skill_slot_modification_type.skill_slot_modification_type_name
+            str(slot_modification_type), slot_modification_type.slot_modification_type_name
         )
 
-    def test_create_skill_slot_modification(self):
+    def test_create_slot_modification(self):
         """Test creating a skill slot modification type."""
         user = get_user_model().objects.create_user(
             "test@example.com",
@@ -202,23 +199,70 @@ class ModelTests(TestCase):
             skill_name="skill name",
         )
 
-        skill_slot = skills.SkillSlot.objects.create(user=user, skill=skill, skill_slot_name="skill_slot_name")
+        slot = skills.Slot.objects.create(user=user, slot_name="slot_name")
 
-        skill_slot_modification_type = skills.SkillSlotModificationType.objects.create(
+        slot_modification_type = skills.SlotModificationType.objects.create(
             user=user,
-            skill_slot_modification_type_name="skill slot attr type",
+            slot_modification_type_name="skill slot attr type",
             max_value=750,  # Representing 7.5% as an integer, will divide by 100 for any display,
             percent_value=True,
         )
 
-        skill_modification = skills.SkillSlotModification.objects.create(
+        skills.SlotModification.objects.create(
             user=user,
-            skill_slot=skill_slot,
-            skill_slot_modification_type=skill_slot_modification_type,
+            slot=slot,
+            skill=skill,
+            slot_modification_type=slot_modification_type,
         )
 
-        skill_mod = skills.SkillSlotModification.objects.get(pk=1)
+        skill_mod = skills.SlotModification.objects.get(pk=1)
         self.assertEquals(
-            skill_mod.skill_slot_modification_type.skill_slot_modification_type_name,
-            skill_slot_modification_type.skill_slot_modification_type_name,
+            skill_mod.slot_modification_type.slot_modification_type_name,
+            slot_modification_type.slot_modification_type_name,
         )
+
+    def test_create_skill_variant(self):
+        """Test creating a skill variant."""
+        user = get_user_model().objects.create_user(
+            "test@example.com",
+            "test123",
+        )
+        skill = skills.Skill.objects.create(
+            user=user,
+            skill_name="skill name",
+        )
+
+        skill_variant = skills.SkillVariant.objects.create(
+            user=user,
+            skill=skill,
+            skill_variant_name="skill variant name",
+            skill_variant_description="skill variant description",
+        )
+        self.assertEquals(
+            str(skill_variant),
+            skill_variant.skill_variant_name,
+        )
+
+
+    def test_create_skill_slot(self):
+        """Test creating a skill slot pair."""
+        user = get_user_model().objects.create_user(
+            "test@example.com",
+            "test123",
+        )
+        slot = skills.Slot.objects.create(user=user, slot_name="slot name")
+        slot2 = skills.Slot.objects.create(user=user, slot_name="slot 2 name")
+        skill = skills.Skill.objects.create(
+            user=user,
+            skill_name="skill name",
+        )
+        skill.slot.add(slot)
+        skill.slot.add(slot2)
+        skill.save()
+        count = skill.slot.count()
+        self.assertEquals(count, 2)
+
+
+
+
+

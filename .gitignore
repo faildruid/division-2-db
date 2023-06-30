@@ -69,3 +69,4 @@ venv.bak/
 creds.env
 static/
 /division_config.py
+.DS_Store

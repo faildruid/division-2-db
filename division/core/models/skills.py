@@ -5,24 +5,7 @@ from django.db import models
 from division.core.models.generics import BaseModel
 
 
-class Skill(BaseModel):
-    """
-    Skill object.
-
-    Which type of kill
-    - Turret
-    - Ballistic Shield
-    - % Skill Haste
-    - etc
-    """
-
-    skill_name = models.CharField(max_length=24, unique=True)
-
-    def __str__(self):
-        return self.skill_name
-
-
-class SkillSlot(BaseModel):
+class Slot(BaseModel):
     """
     Skill object slot.
 
@@ -33,18 +16,14 @@ class SkillSlot(BaseModel):
     - etc
     """
 
-    skill_slot_name = models.CharField(max_length=24, unique=True)
-    skill = models.ForeignKey(
-        Skill,
-        related_name="skill",
-        on_delete=models.PROTECT,
-    )
+    slot_name = models.CharField(max_length=64, unique=True)
 
     def __str__(self):
-        return self.skill_slot_name
+        return self.slot_name
 
 
-class SkillSlotModificationType(BaseModel):
+
+class SlotModificationType(BaseModel):
     """
     Skill object slot.
 
@@ -57,13 +36,54 @@ class SkillSlotModificationType(BaseModel):
 
     percent_value = models.BooleanField(default=True)
     max_value = models.IntegerField(default=0)
-    skill_slot_modification_type_name = models.CharField(max_length=24, unique=True)
+    slot_modification_type_name = models.CharField(max_length=64, unique=True)
 
     def __str__(self):
-        return self.skill_slot_modification_type_name
+        return self.slot_modification_type_name
+
+class Skill(BaseModel):
+    """
+    Skill object.
+
+    Which type of kill
+    - Turret
+    - Ballistic Shield
+    - % Skill Haste
+    - etc
+    """
+
+    skill_name = models.CharField(max_length=64, unique=True)
+    skill_description = models.CharField(max_length=2048, unique=True)
+    slot = models.ManyToManyField(Slot)
+
+    def __str__(self):
+        return self.skill_name
 
 
-class SkillSlotModification(BaseModel):
+class SkillVariant(BaseModel):
+    """
+    Skill object variant.
+
+    Which type of variant by skill
+    - Defender Drone
+    - Artillery Turret
+    - Reviver Hive
+    """
+
+    skill_variant_name = models.CharField(max_length=64, unique=True)
+    skill_variant_description = models.CharField(max_length=2048, unique=True)
+    skill = models.ForeignKey(
+        Skill,
+        related_name="variant_skill",
+        on_delete=models.PROTECT,
+    )
+
+    def __str__(self):
+        return self.skill_variant_name
+
+
+
+class SlotModification(BaseModel):
     """
     Skill object slot.
 
@@ -74,13 +94,20 @@ class SkillSlotModification(BaseModel):
     - etc
     """
 
-    skill_slot = models.ForeignKey(
-        SkillSlot,
-        related_name="skill_slot",
+    slot = models.ForeignKey(
+        Slot,
+        related_name="slot",
         on_delete=models.PROTECT,
     )
-    skill_slot_modification_type = models.ForeignKey(
-        SkillSlotModificationType,
-        related_name="skill_slot_modification_type",
+    slot_modification_type = models.ForeignKey(
+        SlotModificationType,
+        related_name="slot_modification_type",
         on_delete=models.PROTECT,
     )
+
+    skill = models.ForeignKey(
+        Skill,
+        related_name="modification_skill",
+        on_delete=models.PROTECT,
+    )
+

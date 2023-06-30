@@ -19,9 +19,9 @@ from .gear import (
 
 from .skills import (
     Skill,
-    SkillSlot,
-    SkillSlotModificationType,
-    # SkillSlotModification
+    Slot,
+    SlotModificationType,
+    # SlotModification
 )
 
 
@@ -68,9 +68,9 @@ __all__ = (
     "GearTalentType",
     "LoadOutSlot",
     "Skill",
-    "SkillSlot",
-    "SkillSlotModificationType",
-    # "SkillSlotModification",
+    "Slot",
+    "SlotModificationType",
+    # "SlotModification",
 )
 
 
