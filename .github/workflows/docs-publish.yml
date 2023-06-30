@@ -18,12 +18,6 @@ jobs:
       - name: Install Docs Publishing Packages
         run: pip install --upgrade -r ./.github/reqs/docs-requirements.txt
 
-      - name: Set Git user
-        run: git config user.name ${{ secrets.CI_USER }}
-
-      - name: Set Git email
-        run: git config user.email ${{ secrets.CI_EMAIL }}
-
       - name: Get Latest
         run: git pull
 
