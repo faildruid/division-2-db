@@ -27,3 +27,6 @@ services:
   db:
     ports:
       - "5432"
+  spa:
+    ports:
+    - "8081:3000"

@@ -71,6 +71,11 @@ img {
 
 .navbar .logo {
     font-weight: 400;
+
+}
+.navbar-brand {
+    width: 30;
+    height: 30;
 }
 
 /* Header */
