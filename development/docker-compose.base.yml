@@ -17,7 +17,4 @@ services:
   api:
     container_name: "api"
     hostname: "api"
-    depends_on:
-      - "db"
-      - "wd"
     <<: [*build, *base]

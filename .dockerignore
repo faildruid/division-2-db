@@ -1,0 +1,30 @@
+# Python
+**/*.pyc
+**/*.pyo
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+poetry.toml
+
+# Docker related
+development/Dockerfile
+development/docker-compose*.yml
+development/*.env
+backup/*
+
+# Other
+docs/_build
+FAQ.md
+site/
+static/
+.git/
+.gitignore
+.github
+tasks.py
+LICENSE
+**/*.log
+**/.vscode/
+invoke*.yml
+tasks.py
+.junk.md
+poetry.toml

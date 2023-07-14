@@ -25,11 +25,11 @@ def is_truthy(arg):
 
 # Use pyinvoke configuration for default values, see http://docs.pyinvoke.org/en/stable/concepts/configuration.html
 # Variables may be overwritten in invoke.yml or by the environment variables INVOKE_division_xxx
-namespace = Collection("faildruid")
+namespace = Collection("division")
 namespace.configure(
     {
-        "faildruid": {
-            "project_name": "faildruid",
+        "division": {
+            "project_name": "division",
             "python_ver": "3.10",
             "local": False,
             "compose_dir": os.path.join(os.path.dirname(__file__), "development"),
@@ -70,14 +70,14 @@ def docker_compose(context, command, **kwargs):
     build_env = {
         # Note: 'docker-compose logs' will stop following after 60 seconds by default,
         # so we are overriding that by setting this environment variable.
-        "COMPOSE_HTTP_TIMEOUT": context.faildruid.compose_http_timeout,
-        "PYTHON_VER": context.faildruid.python_ver,
+        "COMPOSE_HTTP_TIMEOUT": context.division.compose_http_timeout,
+        "PYTHON_VER": context.division.python_ver,
     }
     compose_command = (
-        f'docker-compose --project-name {context.faildruid.project_name} --project-directory "{context.faildruid.compose_dir}"'
+        f'docker-compose --project-name {context.division.project_name} --project-directory "{context.division.compose_dir}"'
     )
-    for compose_file in context.faildruid.compose_files:
-        compose_file_path = os.path.join(context.faildruid.compose_dir, compose_file)
+    for compose_file in context.division.compose_files:
+        compose_file_path = os.path.join(context.division.compose_dir, compose_file)
         compose_command += f' -f "{compose_file_path}"'
     compose_command += f" {command}"
     print(f'Running docker-compose command "{command}"')
@@ -85,11 +85,11 @@ def docker_compose(context, command, **kwargs):
 
 
 def run_command(context, command, **kwargs):
-    """Wrapper to run a command locally or inside the faildruid container."""
-    if is_truthy(context.faildruid.local):
+    """Wrapper to run a command locally or inside the division container."""
+    if is_truthy(context.division.local):
         context.run(command, **kwargs)
     else:
-        # Check if faildruid is running, no need to start another faildruid container to run a command
+        # Check if division is running, no need to start another division container to run a command
         docker_compose_status = "ps --services --filter status=running"
         results = docker_compose(context, docker_compose_status, hide="out")
         if "api" in results.stdout:
@@ -110,7 +110,7 @@ def run_command(context, command, **kwargs):
     }
 )
 def build(context, force_rm=False, cache=True):
-    """Build faildruid docker image."""
+    """Build division docker image."""
     command = "build"
 
     if not cache:
@@ -118,7 +118,7 @@ def build(context, force_rm=False, cache=True):
     if force_rm:
         command += " --force-rm"
 
-    print(f"Building Container Contexts with Python {context.faildruid.python_ver}...")
+    print(f"Building Container Contexts with Python {context.division.python_ver}...")
     docker_compose(context, command)
 
 

@@ -18,9 +18,10 @@
 			"**/*.html": "html",
 		},
 		// Python Linting settings
-		"python.linting.enabled": true,
-		"python.linting.lintOnSave": true,
-		"python.formatting.provider": "black",
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.black-formatter",
+			"editor.formatOnSave": true
+		  },
 		// Python Execution settings
 		"python.languageServer": "Pylance",
 		"python.analysis.autoSearchPaths": true,
@@ -28,6 +29,7 @@
 		"cSpell.words": [
 			"afile",
 			"dcramer",
+			"funcs",
 			"globalz",
 			"localz",
 			"WSGI"
@@ -43,7 +45,7 @@
 		],
 		"cSpell.ignorePaths": [
 			"CODEOWNERS",
-			"pyproject.toml",
+			"*.toml",
 			"*.env",
 			"**.code-workspace",
 			"tasks.py",

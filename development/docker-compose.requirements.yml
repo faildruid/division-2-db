@@ -2,7 +2,7 @@
 version: "3.4"
 services:
   db:
-    image: "postgres:14-alpine"
+    image: "postgres:16-alpine"
     container_name: "db"
     hostname: "db"
     env_file:
@@ -12,6 +12,12 @@ services:
       - "5432:5432"
     volumes:
       - "postgres_data:/var/lib/postgresql/data"
+    healthcheck:
+      test: "pg_isready --username=$$POSTGRES_USER --dbname=$$POSTGRES_DB"
+      interval: "10s"
+      timeout: "5s"
+      retries: 10
+
   wd:
     image: "selenium/standalone-firefox:4.8.3-20230404"
     container_name: "wd"
@@ -23,6 +29,20 @@ services:
     ports:
       - "4444:4444"
       - "7900:7900"
+
+  pga:
+    image: "dpage/pgadmin4:latest"
+    container_name: "pga"
+    hostname: "pga"
+    env_file:
+      - "dev.env"
+      - "creds.env"
+    shm_size: "2gb"
+    ports:
+      - "8082:80"
+    depends_on:
+      db:
+        condition: "service_healthy"
 
 volumes:
   postgres_data: {}

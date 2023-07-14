@@ -341,4 +341,6 @@ google-services.json
 # Android Profiling
 *.hprof
 
-# End of https://www.toptal.com/developers/gitignore/api/react,reactnative
+## PostgreSQL backup
+*.bkp
+tables.out

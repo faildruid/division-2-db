@@ -1,0 +1,892 @@
+[
+    {
+      "weapons": "ASR",
+      "name": "Born Great",
+      "core_attribute_first": 14.3,
+      "core_attribute_second": "20 HD",
+      "Attribute": "11.4 reload",
+      "Talent": "Perfect Stabilise",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "ASR",
+      "name": "Burnout",
+      "core_attribute_first": 12.6,
+      "core_attribute_second": "19.5 HD",
+      "Attribute": "6 D2A",
+      "Talent": "Perfectly on Empty",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "ASR",
+      "name": "Chameleon",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 HD",
+      "Attribute": "9.5 CHC",
+      "Talent": "Adaptive Instincts",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "F2000",
+      "core_attribute_first": 15,
+      "core_attribute_second": "19 HD",
+      "Attribute": "9 D2T",
+      "Talent": "Optimist",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "ASR",
+      "name": "Kingbreaker",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 HD",
+      "Attribute": "10 D2T",
+      "Talent": "Perfect Flatline",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "kingbreaker",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 hd",
+      "Attribute": "12 reloasd",
+      "Talent": "Perfect Flatline",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "Mechanical Animal",
+      "core_attribute_first": 14.1,
+      "core_attribute_second": "21 HD",
+      "Attribute": "10% Mag Size",
+      "Talent": "Future Perfection",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "Mechanical Animal",
+      "core_attribute_first": 15,
+      "core_attribute_second": "19 HD",
+      "Attribute": "8.5 CHC",
+      "Talent": "Future Perfection",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "Police M4",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 HD",
+      "Attribute": "10 D2T",
+      "Talent": "Flatline",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "St. Elmo's Engine",
+      "core_attribute_first": 13.2,
+      "core_attribute_second": "18.5 HD",
+      "Attribute": "9 D2T",
+      "Talent": "Actum Est",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "St. Elmo's Engine",
+      "core_attribute_first": 13.5,
+      "core_attribute_second": "14 HD",
+      "Attribute": "10.8 Stab",
+      "Talent": "Actum Est",
+      "Recalibrate": "y",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "St. Elmo's Engine",
+      "core_attribute_first": 13.6,
+      "core_attribute_second": "17.5 HD",
+      "Attribute": "10 HS",
+      "Talent": "Actum Est",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "St. Elmo's Engine",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 HD",
+      "Attribute": "10 CHd",
+      "Talent": "Actum Est",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "ASR",
+      "name": "Test Subject",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 HD",
+      "Attribute": "10 D2T",
+      "Talent": "Perfectly In-sync",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "DMR",
+      "name": "Dread Edict",
+      "core_attribute_first": 15,
+      "core_attribute_second": "111 HS",
+      "Attribute": "10 D2T",
+      "Talent": "Full Stop",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "DMR",
+      "name": "Ekim's Long Stick",
+      "core_attribute_first": 15,
+      "core_attribute_second": "111 HS",
+      "Attribute": "10 CHD",
+      "Talent": "Perfect Ranger",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "DMR",
+      "name": "Mantis",
+      "core_attribute_first": 13.6,
+      "core_attribute_second": "105 HS",
+      "Attribute": "9 D2T",
+      "Talent": "In Plain Sight",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "DMR",
+      "name": "Nemesis",
+      "core_attribute_first": 12.7,
+      "core_attribute_second": "88 HS",
+      "Attribute": "9.5 chc",
+      "Talent": "Electromagnetic Accelerator",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "DMR",
+      "name": "Sacrum Imperium",
+      "core_attribute_first": 15,
+      "core_attribute_second": "111 HS",
+      "Attribute": "10 D2A",
+      "Talent": "The Trap",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Backup Boomstick",
+      "core_attribute_first": 17,
+      "core_attribute_second": "12 D2A",
+      "Attribute": "12 Stability",
+      "Talent": "Close and Personal",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Busy Little Bee",
+      "core_attribute_first": 13.6,
+      "core_attribute_second": "8 D2T",
+      "Attribute": "",
+      "Talent": "Busy Little Bee",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Diceros",
+      "core_attribute_first": 11,
+      "core_attribute_second": "9 magsize",
+      "Attribute": "",
+      "Talent": "Salvage",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Double Barrel Sawd Off",
+      "core_attribute_first": 15,
+      "core_attribute_second": "8 D2A",
+      "Attribute": "10 D2T",
+      "Talent": "Steady Handed",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Firestarter",
+      "core_attribute_first": 11.6,
+      "core_attribute_second": "7.5 HD",
+      "Attribute": "",
+      "Talent": "Primer Rounds",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Liberty",
+      "core_attribute_first": 13.2,
+      "core_attribute_second": "9 D2T",
+      "Attribute": "",
+      "Talent": "Liberty or Death",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Liberty",
+      "core_attribute_first": 15,
+      "core_attribute_second": "10 D2T",
+      "Attribute": "",
+      "Talent": "Liberty or Death",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Maxim 9",
+      "core_attribute_first": 11.6,
+      "core_attribute_second": "9 HS",
+      "Attribute": "",
+      "Talent": "Perfect Spike",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Military M9",
+      "core_attribute_first": 10.4,
+      "core_attribute_second": "6.5 chc",
+      "Attribute": "",
+      "Talent": "Breadbasket",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Mosquito",
+      "core_attribute_first": 12.3,
+      "core_attribute_second": "9 HS",
+      "Attribute": "",
+      "Talent": "Mosquito Song",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Mozambique Special",
+      "core_attribute_first": 12.1,
+      "core_attribute_second": "6 D2A",
+      "Attribute": "",
+      "Talent": "Perfect Breadbasket",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "P320 XCompact",
+      "core_attribute_first": 11.6,
+      "core_attribute_second": "5 D2A",
+      "Attribute": "",
+      "Talent": "Perfect Preservation",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Police Magnum",
+      "core_attribute_first": 8.8,
+      "core_attribute_second": "10.8 swap",
+      "Attribute": "",
+      "Talent": "Sadist",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Police Magnum",
+      "core_attribute_first": 11.5,
+      "core_attribute_second": "3.9 Cyclic",
+      "Attribute": "",
+      "Talent": "Strained",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Prophet",
+      "core_attribute_first": 12.8,
+      "core_attribute_second": "6 D2A",
+      "Attribute": "",
+      "Talent": "Perfectly Determined",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Prophet",
+      "core_attribute_first": 15,
+      "core_attribute_second": "10 HS",
+      "Attribute": "",
+      "Talent": "Perfectly Determined",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Px4 Storn F",
+      "core_attribute_first": 11.3,
+      "core_attribute_second": "8 CHD",
+      "Attribute": "",
+      "Talent": "Determined",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Px4 Storn F",
+      "core_attribute_first": 11.6,
+      "core_attribute_second": "5 D2a",
+      "Attribute": "",
+      "Talent": "Sadist",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Shatpshooter 93 R",
+      "core_attribute_first": 11.6,
+      "core_attribute_second": "9.3 reload",
+      "Attribute": "",
+      "Talent": "Perfectly Unwavering",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Shubnosed Diceros",
+      "core_attribute_first": 8.9,
+      "core_attribute_second": "5 D2A",
+      "Attribute": "",
+      "Talent": "Future Perfect",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Survivalist D50",
+      "core_attribute_first": 11.6,
+      "core_attribute_second": "8 D2T",
+      "Attribute": "",
+      "Talent": "Perfect Sadist",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "TDI \"Kard\" Custom",
+      "core_attribute_first": 15,
+      "core_attribute_second": "1 Skill tier",
+      "Attribute": "",
+      "Talent": "Future Perfect",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "X-45",
+      "core_attribute_first": 10.2,
+      "core_attribute_second": "7 D2T",
+      "Attribute": "",
+      "Talent": "Salvage",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "HDG",
+      "name": "Diceros Special",
+      "core_attribute_first": 11.6,
+      "core_attribute_second": "9.3 Stab",
+      "Attribute": "",
+      "Talent": "Perfect Optimist",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "LMG",
+      "name": "Big Show",
+      "core_attribute_first": 15,
+      "core_attribute_second": "12 D2T",
+      "Attribute": "10 CHD",
+      "Talent": "Perfect Thunder-strike",
+      "Recalibrate": "y",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "LMG",
+      "name": "BlueScreen",
+      "core_attribute_first": 12,
+      "core_attribute_second": "11 D2T",
+      "Attribute": "6 D2A",
+      "Talent": "Disruptor Rounds",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "LMG",
+      "name": "BlueScreen",
+      "core_attribute_first": 15,
+      "core_attribute_second": "12 D2T",
+      "Attribute": "6 D2A",
+      "Talent": "Disruptor Rounds",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "LMG",
+      "name": "Bullet King",
+      "core_attribute_first": 13.5,
+      "core_attribute_second": "10 D2T",
+      "Attribute": "9 CHD",
+      "Talent": "Bullett Hell",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "LMG",
+      "name": "Bullet King",
+      "core_attribute_first": 15,
+      "core_attribute_second": "11 D2T",
+      "Attribute": "9 CHD",
+      "Talent": "Bullett Hell",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "LMG",
+      "name": "Carnage",
+      "core_attribute_first": 15,
+      "core_attribute_second": "12 D2T",
+      "Attribute": "6 D2A",
+      "Talent": "Sadist",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "LMG",
+      "name": "Dare",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 D2T",
+      "Attribute": "9.5 HD",
+      "Talent": "Perfect Flatline",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "LMG",
+      "name": "GR9",
+      "core_attribute_first": 15,
+      "core_attribute_second": "9 D2T",
+      "Attribute": "9.5 HD",
+      "Talent": "Steady Handed",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "LMG",
+      "name": "GR9",
+      "core_attribute_first": 15,
+      "core_attribute_second": "10 D2T",
+      "Attribute": "10 d2a",
+      "Talent": "sadist",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "LMG",
+      "name": "Pestilence",
+      "core_attribute_first": 13.6,
+      "core_attribute_second": "12 D2T",
+      "Attribute": "6 D2A",
+      "Talent": "Plague of the Outcasts",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "RIF",
+      "name": "ACR SS",
+      "core_attribute_first": 17,
+      "core_attribute_second": "17 CHD",
+      "Attribute": "10 D2T",
+      "Talent": "Sadist",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "RIF",
+      "name": "Artist's Tool",
+      "core_attribute_first": 15,
+      "core_attribute_second": "17 CHD",
+      "Attribute": "8D2A",
+      "Talent": "Perfect Rilfeman",
+      "Recalibrate": "y",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "RIF",
+      "name": "Bakers Dozen",
+      "core_attribute_first": 13.2,
+      "core_attribute_second": "14 CHD",
+      "Attribute": "8 D2T",
+      "Talent": "Perfect Lucky Shot",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "RIF",
+      "name": "Bakers Dozen",
+      "core_attribute_first": 15,
+      "core_attribute_second": "13 CHD",
+      "Attribute": "10 HS",
+      "Talent": "Perfect Lucky Shot",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "RIF",
+      "name": "Diamondback",
+      "core_attribute_first": 14.2,
+      "core_attribute_second": "17 CHD",
+      "Attribute": "8 HS",
+      "Talent": "Agonizing Bite",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "RIF",
+      "name": "Doctor Home",
+      "core_attribute_first": 12.2,
+      "core_attribute_second": "14 chd",
+      "Attribute": "9 d2T",
+      "Talent": "Doctor Home",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "RIF",
+      "name": "Doctor Home",
+      "core_attribute_first": 14.12,
+      "core_attribute_second": "17 CHD",
+      "Attribute": "10 D2T",
+      "Talent": "Doctor Home",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "RIF",
+      "name": "Merciless",
+      "core_attribute_first": 13.5,
+      "core_attribute_second": "17 CHD",
+      "Attribute": "9.5 CHC",
+      "Talent": "Binary Trigger",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "RIF",
+      "name": "SIG 716",
+      "core_attribute_first": 17,
+      "core_attribute_second": "17 CHD",
+      "Attribute": "10 HS",
+      "Talent": "Flatline",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Dartk Winter",
+      "core_attribute_first": 12.6,
+      "core_attribute_second": "21 chc",
+      "Attribute": "8 HD",
+      "Talent": "Perfect Killer",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Dartk Winter",
+      "core_attribute_first": 12.8,
+      "core_attribute_second": "19.5 CHC",
+      "Attribute": "7.5 HD",
+      "Talent": "Perfect Killer",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Dartk Winter",
+      "core_attribute_first": 14.6,
+      "core_attribute_second": "21 chc",
+      "Attribute": "6 D2A",
+      "Talent": "Perfect Killer",
+      "Recalibrate": "y",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Dartk Winter",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 chc",
+      "Attribute": "10 chd",
+      "Talent": "Perfect Killer",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Emeline's Guard",
+      "core_attribute_first": 11,
+      "core_attribute_second": "15 CHC",
+      "Attribute": "10 CHD",
+      "Talent": "Perfect Preservation",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Lady Death",
+      "core_attribute_first": 12,
+      "core_attribute_second": "21 CHC",
+      "Attribute": "6 D2A",
+      "Talent": "Breate Free",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Lady Death",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 CHC",
+      "Attribute": "6 D2A",
+      "Talent": "Breate Free",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "SMG",
+      "name": "MP5 ST",
+      "core_attribute_first": 15,
+      "core_attribute_second": "11 CHC",
+      "Attribute": "6.5 HD",
+      "Talent": "sadist",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "SMG",
+      "name": "MP7",
+      "core_attribute_first": 12.7,
+      "core_attribute_second": "17.5 CHC",
+      "Attribute": "8 CHD",
+      "Talent": "Killer",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "SMG",
+      "name": "P90",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 chc",
+      "Attribute": "10 D2T",
+      "Talent": "Strained",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "P90",
+      "core_attribute_first": 15,
+      "core_attribute_second": "13 CHC",
+      "Attribute": "7 CHD",
+      "Talent": "Eyeless",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Swap Chain",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 chc",
+      "Attribute": "10 chd",
+      "Talent": "Perfect Unwavering",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "SMG",
+      "name": "The Chatterbox",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 chc",
+      "Attribute": "10 chd",
+      "Talent": "Incessant Chatter",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "The Grudge",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 chc",
+      "Attribute": "10 D2T",
+      "Talent": "Perfectly Vindictive",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Vector .45",
+      "core_attribute_first": 15,
+      "core_attribute_second": "21 chc",
+      "Attribute": "10 D2T",
+      "Talent": "Flatline",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Vector 9mm",
+      "core_attribute_first": 11,
+      "core_attribute_second": "15 CHC",
+      "Attribute": "8 D2T",
+      "Talent": "Sadist",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "SMG",
+      "name": "Vector 9mm Tactical",
+      "core_attribute_first": 11.7,
+      "core_attribute_second": "16 chc",
+      "Attribute": "6 chd",
+      "Talent": "Optimist",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "STG",
+      "name": "Lullaby",
+      "core_attribute_first": 13,
+      "core_attribute_second": "2 D2A",
+      "Attribute": "2 D2T",
+      "Talent": "Sandman",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "STG",
+      "name": "Lullaby",
+      "core_attribute_first": 14.2,
+      "core_attribute_second": "10 D2A",
+      "Attribute": "10 D2T",
+      "Talent": "Sandman",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "STG",
+      "name": "Scorpio",
+      "core_attribute_first": 12.6,
+      "core_attribute_second": "10 D2A",
+      "Attribute": "8 ChD",
+      "Talent": "Septic Shock",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "STG",
+      "name": "Sweet Dreams",
+      "core_attribute_first": 12.9,
+      "core_attribute_second": "12 D2A",
+      "Attribute": "10 D2T",
+      "Talent": "Sandman",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "STG",
+      "name": "ACS-12",
+      "core_attribute_first": 12.3,
+      "core_attribute_second": "10 D2A",
+      "Attribute": "10 D2T",
+      "Talent": "Preservation",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "STG",
+      "name": "ACS-12",
+      "core_attribute_first": 15,
+      "core_attribute_second": "12 D2A",
+      "Attribute": "10 D2T",
+      "Talent": "Preservation",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "STG",
+      "name": "Rock n' Roll",
+      "core_attribute_first": 15,
+      "core_attribute_second": "9 D2A",
+      "Attribute": "10 D2T",
+      "Talent": "Perfectly Extra",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "STG",
+      "name": "Scorpio",
+      "core_attribute_first": 15,
+      "core_attribute_second": "12 D2A",
+      "Attribute": "10 chd",
+      "Talent": "Septic Shock",
+      "Recalibrate": "n",
+      "Proficient": "y"
+    },
+    {
+      "weapons": "STG",
+      "name": "Sweet Dreams",
+      "core_attribute_first": 15,
+      "core_attribute_second": "12 D2A",
+      "Attribute": "10 D2T",
+      "Talent": "Sandman",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    },
+    {
+      "weapons": "STG",
+      "name": "Tsunami",
+      "core_attribute_first": 12,
+      "core_attribute_second": "12 D2A",
+      "Attribute": "5 cyclic",
+      "Talent": "Perfect Pummel",
+      "Recalibrate": "n",
+      "Proficient": "n"
+    }
+  ]
