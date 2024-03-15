@@ -22,7 +22,6 @@ class Slot(BaseModel):
         return self.slot_name
 
 
-
 class SlotModificationType(BaseModel):
     """
     Skill object slot.
@@ -80,7 +79,6 @@ class SkillVariant(BaseModel):
 
     def __str__(self):
         return self.skill_variant_name
-
 
 
 class SlotModification(BaseModel):

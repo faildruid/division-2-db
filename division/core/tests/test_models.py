@@ -184,9 +184,7 @@ class ModelTests(TestCase):
             percent_value=True,
         )
 
-        self.assertEquals(
-            str(slot_modification_type), slot_modification_type.slot_modification_type_name
-        )
+        self.assertEquals(str(slot_modification_type), slot_modification_type.slot_modification_type_name)
 
     def test_create_slot_modification(self):
         """Test creating a skill slot modification type."""
@@ -243,7 +241,6 @@ class ModelTests(TestCase):
             skill_variant.skill_variant_name,
         )
 
-
     def test_create_skill_slot(self):
         """Test creating a skill slot pair."""
         user = get_user_model().objects.create_user(
@@ -261,8 +258,3 @@ class ModelTests(TestCase):
         skill.save()
         count = skill.slot.count()
         self.assertEquals(count, 2)
-
-
-
-
-

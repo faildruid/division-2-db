@@ -10,6 +10,7 @@ from division.core import views
 
 urlpatterns = [
     path("", views.HomePageView.as_view(), name="home"),
+    path("about", views.AboutPageView.as_view(), name="about"),
     path("admin/", admin.site.urls),
     path('api/schema/', SpectacularAPIView.as_view(), name='api-schema'),
     path(

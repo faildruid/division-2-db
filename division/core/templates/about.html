@@ -1,0 +1,55 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %} - About{% endblock title %}
+{% block content %}
+<section id="home-info" class="bg-dark">
+    <div class="content">
+      <h2><span class="text-primary">The History</span> behind this site.</h2>
+      <p>
+        I wanted to create a place where I could search mods, attributes, gear etc, and in future store my own inventory,
+        and builds.
+      </p>
+      <p>Thanks to the <a
+        href="https://docs.google.com/spreadsheets/d/1nrPBmOrtpkEW1j5fbcRT7L-AXgsGOqMqxXoVtopsiGM/edit#gid=1380412817"><span
+          class="text-primary">Spreadsheet Lads</span></a> for their ard work compiling the datasets I used for the core build: Azurmen, Bend3n, Gingerbeard_x, Maplestruck, and Saint Landwalker.
+      </p>
+      <p>
+        Thanks also to u/bitlilin for making <a href="http://bitlilin.com/td2sheet/"><span class="text-primary">The Division 2 Bit Datasheet</span></a>, a
+        priceless collection of datamined information.
+        Find it at </p>
+    </div>
+  </section>
+
+
+  <section id="about-info" class="bg-light py-3">
+    <div class="container">
+      <div class="info-left">
+        <p>Thanks to the <a
+            href="https://docs.google.com/spreadsheets/d/1nrPBmOrtpkEW1j5fbcRT7L-AXgsGOqMqxXoVtopsiGM/edit#gid=1380412817"><span
+              class="text-primary">Spreadsheet Lads</span></a> for their ard work compiling the datasets I used for the core build: Azurmen, Bend3n, Gingerbeard_x, Maplestruck, and Saint Landwalker.
+          </p>      </div>
+      <div class="info-right">
+        <img src="{% static '/img/.jpg' %}" alt="hotel">
+      </div>
+    </div>
+  </section>
+
+  <div class="clr"></div>
+
+  <section id="testimonials" class="py-3">
+    <div class="container">
+      <h2 class="l-heading">What Our Guests Say</h2>
+      <div class="testimonial bg-primary">
+        <img src="./img/person-1.jpg" alt="Samantha">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi quibusdam, dolorum maxime cum numquam quisquam, deleniti eum incidunt, velit non consectetur. Facere, ipsa maxime, ullam id amet odio laboriosam sit iusto tempore fugit exercitationem, a dolore quo maiores nisi!</p>
+      </div>
+
+      <div class="testimonial bg-primary">
+          <img src="./img/person-2.jpg" alt="Jen">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi quibusdam, dolorum maxime cum numquam quisquam, deleniti eum incidunt, velit non consectetur. Facere, ipsa maxime, ullam id amet odio laboriosam sit iusto tempore fugit exercitationem, a dolore quo maiores nisi!</p>
+        </div>
+    </div>
+  </section>
+
+
+  {% endblock %}

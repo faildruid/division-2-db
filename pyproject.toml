@@ -4,6 +4,19 @@ version = "0.1.0"
 description = ""
 authors = ["Shorel Aran <builds@psmware.ie>", "The Fail Druid <faildruid@mcleans.ie>"]
 readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: Django :: 5.0",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+homepage = "https://github.tools.sap/cpe/netbox-dcam-import"
+documentation = "https://pages.github.tools.sap/cpe/netbox-dcam-import"
+
 packages = [{include = "division"}]
 
 [tool.poetry.dependencies]
@@ -41,8 +54,8 @@ build-backend = "poetry.core.masonry.api"
 division-server = "division.core.cli:main"
 
 [tool.black]
-line-length = 120
-target-version = ['py39']
+line-length = 119
+target-version = ['py310']
 include = '\.pyi?$'
 exclude = '''
 (
@@ -63,3 +76,10 @@ exclude = '''
   | tasks.py          # the root of the project
 )
 '''
+
+[tool.pydocstyle]
+convention = "google"
+inherit = false
+match = "(?!(__init__|tasks)).*\\.py"
+match_dir = "^(?!(\\..*|venv|\\.venv|tests|migrations|development)).*"
+add_ignore = "D212,D106"

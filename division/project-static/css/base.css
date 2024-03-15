@@ -80,7 +80,7 @@ img {
 
 /* Header */
 .hero {
-    background: url('/static/img/home/showcase.jpg') no-repeat center center/cover;
+    background: url('/static/img/home/showcase.jpeg') no-repeat center center/cover;
     height: 100vh;
     position: relative;
     color: #fff;
